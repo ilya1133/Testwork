@@ -32,3 +32,7 @@ string[] AskArray() {
     Write("Введите значения через пробел: ");
     return ReadLine().Split(" ");
 }
+
+string[] array = AskArray();
+string[] result = FindLessThan(array, 3);
+WriteLine($"[{string.Join(", ", array)}] -> [{string.Join(", ", result)}]");
